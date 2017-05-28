@@ -237,6 +237,15 @@ header {
 
 footer {
     padding: 50px 0;
+    background: $base-color;
+
+    .social a {
+        color: lighten($base-color, 25%);
+
+        &:hover {
+            color: #fff;
+        }
+    }
 }
 
 .copyright {
@@ -244,7 +253,8 @@ footer {
 
     p {
         margin: 0;
-        color: $text;
+        color: #fff;
+        font-weight: 300;
     }
 }
 
@@ -258,12 +268,12 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($text, 25%);
+        border: 3px solid lighten($base-color, 25%);
         text-align:center;
     }
 
     i {
-        color: $text;
+        color: #fff;
     }
 }
 
@@ -724,16 +734,23 @@ footer {
     background: $base-color;
     text-align: center;
 
-    h2 {
-        margin: 0 0 15px 0;
+    // h2 {
+    //     margin: 0 0 15px 0;
+    //     font-weight: 500;
+    // }
+
+    .heading {
         color: #fff;
-        font-weight: 500;
+
+        &:after {
+            background: #fff;
+        }
     }
 }
 
 #contact-form {
-    max-width: 500px;
-    margin: 0 auto;
+    // max-width: 500px;
+    // margin: 0 auto;
 
     input, textarea {
         display: block;
@@ -746,7 +763,8 @@ footer {
         color: #fff;
         @include transition();
         @include placeholder {
-            color: #fff;
+            // color: rgba(#fff, 0.75);
+            color: lighten($base-color, 25%);
         }
 
         &:focus {
@@ -775,6 +793,20 @@ footer {
         &:hover {
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
+    }
+}
+
+#contact-info {
+    h4 {
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    p {
+        color: #fff;
+        font-weight: 300;
+        margin-top: 5px;
     }
 }
 
@@ -892,6 +924,10 @@ footer {
         p {
             text-align: left;
         }
+    }
+
+    #contact-form {
+        margin-bottom: 30px;
     }
 
 }
