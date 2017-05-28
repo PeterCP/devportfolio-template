@@ -71,9 +71,9 @@
                     <p>
                         Mi nombre es Pedro Castillo y soy estudiante de Ingeniería en Sistemas y TI
                         en la Universidad Anáhuac Mayab. Mayormente me dedico al desarrollo web de
-                        backend. Honestamente no tengo mucha experiencia laboral; sin embargo, no me
-                        cuesta trabajo adecuarme a nuevas herramientas de desarrollo ni formas de
-                        trabajar. Hablo español, inglés y alemán. En mis ratos libres me gusta jugar
+                        backend. No tengo mucha experiencia laboral; sin embargo, no me cuesta
+                        trabajo adecuarme a nuevas herramientas de desarrollo ni formas de trabajar.
+                        Hablo español, inglés y alemán. En mis ratos libres me gusta jugar
                         videojuegos y leer sobre nuevas tecnologías.
                     </p>
                 </div>
@@ -194,27 +194,16 @@
     <div id="contact">
         <h2 class="heading">Contacto</h2>
         <div class="row">
-            <div id="contact-form" class="col-sm-8">
-                <form method="POST" action="https://formspree.io/pacp95@gmail.com">
-                    <!-- <input type="hidden" name="_subject" value="Petición de Contacto desde Currículum Vitae" /> -->
-                    <input type="email" name="_replyto" placeholder="Tu email" required>
-                    <input type="text" name="_subject" placeholder="Asunto del mensaje" required>
-                    <textarea name="message" placeholder="Tu mensaje" required></textarea>
-                    <button type="submit">
-                        <i class="fa fa-send"></i> Enviar
-                    </button>
-                </form>
-            </div>
-            <div id="contact-info" class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-12">
-                        <h4><i class="fa fa-phone"></i> Teléfono</h4>
-                        <p>999 322 2248</p>
-                    </div>
-                    <div class="col-xs-6 col-sm-12">
-                        <h4><i class="fa fa-envelope-o"></i> Email</h4>
-                        <p>pacp95@gmail.com</p>
-                    </div>
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div id="contact-form">
+                    <form method="POST" action="https://formspree.io/pacp95@gmail.com">
+                        <input type="email" name="_replyto" placeholder="Tu email" required>
+                        <input type="text" name="_subject" placeholder="Asunto">
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
+                        <button type="submit">
+                            <i class="fa fa-send"></i> Enviar
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

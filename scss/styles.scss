@@ -734,11 +734,6 @@ footer {
     background: $base-color;
     text-align: center;
 
-    // h2 {
-    //     margin: 0 0 15px 0;
-    //     font-weight: 500;
-    // }
-
     .heading {
         color: #fff;
 
@@ -763,7 +758,6 @@ footer {
         color: #fff;
         @include transition();
         @include placeholder {
-            // color: rgba(#fff, 0.75);
             color: lighten($base-color, 25%);
         }
 
