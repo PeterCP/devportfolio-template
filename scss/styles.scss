@@ -662,6 +662,10 @@ footer {
 
 .project-image {
     float: left;
+
+    img {
+        max-width: 300px;
+    }
 }
 
 .project-info {
@@ -682,6 +686,10 @@ footer {
         color: $text;
         margin: 0 0 15px 0;
         font-size: 0.9em;
+    }
+
+    a + a {
+        margin-left: 15px;
     }
 }
 
