@@ -366,13 +366,19 @@ footer {
     overflow: hidden;
 }
 
+#lead-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 #lead-content {
     position: absolute;
     z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    // text-align: center;
 
     h1, h2 {
         margin: 0;
@@ -1011,7 +1017,16 @@ footer {
 // Extra Small Devices
 @media only screen and (max-width : 480px) {
 
+    #lead-row {
+        flex-direction: column;
+    }
+
+    #lead-image {
+        margin-bottom: 20px;
+    }
+
     #lead-content {
+        text-align: center;
         h1 {
             font-size: 1.5em;
         }
